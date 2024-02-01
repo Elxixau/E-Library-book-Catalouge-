@@ -1,0 +1,43 @@
+.log .row{
+  min-height: 100vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.reg .form{
+    min-height: 100vh;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Mulai dari luar layar sebelah kiri */
+  }
+  100% {
+    transform: translateX(0); /* Akhiri di posisi awal */
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Puncak pantulan */
+  }
+}
+
+.img-fluid {
+  animation: slideIn 2s ease; /* Kombinasi animasi */
+}
+
+@media screen and (max-width: 990px) {
+  .log .row-custom{
+   margin-top: 100px;
+  }
+ }
